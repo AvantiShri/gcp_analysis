@@ -1,0 +1,9 @@
+[
+    {
+        "experiment_name": "control",
+        "blocksize": 1024,
+        "numloops": 1024,
+        "cum_zsq_minus_1": 94.85009765624999,
+        "zscore_for_cumzsqm1": 2.964065551757812
+    }
+]
