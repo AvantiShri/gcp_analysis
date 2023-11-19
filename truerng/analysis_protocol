@@ -1,0 +1,16 @@
+Analysis protocol:
+
+- Focus on "power play" (first ten overs), then last ten overs (if I manage to stay awake for it) per innings. Reason: middle overs don't tend to have much attention
+--> Secondarily, all events I manage to log.
+- Events will basically "start" with bowler run-up and "end" when it feels like the ball is no longer interesting (crowd goes quiet, camera cuts away...basically it's clear nothing more is happening)
+- When there is a wicket or a six, will include a bit longer of the "celebration", may log a specific "celebration" event for it and include that
+- Control: the break **between overs** (duration between balls is too close to real events to cleanly separate as a 'negative', but I don't expect attention to be focused during commercial breaks etc)
+- Setting intention that devices tune into crowd sentiment
+- Planning to analyze:
+(1) sum of *last bit* in bytes generated in interval (200 bytes per interval, interval size is 0.05)
+(2) secondarily: sum of all bits generated in interval (200*8 bits per interval)
+(3) Three devices are recording: two in the other room with the other computer, one on this computer
+(4) Will use both the standard GCP analysis (composite Z score across devices, squared in each interval, then sum of squared Z scores is compared to relevant chi-squared) as well as "individual device variance" metric (square Z scores for each device and interval, sum across all devices and intervals in event and compare to relevant chi-squared)
+(5) Will do meta-analysis across all events
+
+I am cheering for India, as are my housemates
